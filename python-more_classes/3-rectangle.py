@@ -60,4 +60,4 @@ class Rectangle:
             if (i != self.__height - 1):
                 z = z + """
 """
-        return l
+        return z
