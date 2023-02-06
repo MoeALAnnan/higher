@@ -17,7 +17,7 @@ Traceback (most recent call last):
 	...
 TypeError: b must be an integer
 
->>> add_integer(None, "hello")
+>>> add_integer(float("Nan"), float("hello"))
 Traceback (most recent call last):
 	...
-TypeError: a must be an integer
+ValueError: cannot convert float NaN to integer
