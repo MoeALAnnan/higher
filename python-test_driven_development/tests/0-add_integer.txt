@@ -17,7 +17,7 @@ Traceback (most recent call last):
 	...
 TypeError: b must be an integer
 
->>> add_integer(None, 2)
+>>> add_integer(None, "hello")
 Traceback (most recent call last):
 	...
 TypeError: a must be an integer
