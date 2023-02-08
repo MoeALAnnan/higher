@@ -33,6 +33,7 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
+    """sub class: Square """
     def __init__(self, size):
         self.__size = size
         print("[Rectangle] {}/{}".format(self.__size, self.__size))
