@@ -19,14 +19,12 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
-        obj = BaseGeometry()
-        obj.integer_validator("height", height)
-        obj2 = BaseGeometry()
-        obj2.integer_validator("width", width)
-    
+        BaseGeometry.integer_validator(self, "height", height)
+        BaseGeometry.integer_validator(self, "width", width)
+
     def area(self):
-        return (self.__height * self.___width)
-    
+        return (self.__height * self.__width)
+
     def __str__(self):
 
-        return("[Rectangle] {}/{}".format(self.__width, self.__height))
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
