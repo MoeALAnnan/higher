@@ -4,6 +4,7 @@ Rectangle = __import__("9-rectangle").BaseGeometry
 
 
 class Square(Rectangle):
+    """ sub class square """
     def __init__(self, size):
         self.__size = size
         Rectangle.integer_validator(self, "size", size)
