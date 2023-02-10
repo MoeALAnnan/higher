@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/python3
 """ write an object to text file using json reoresentation"""
 import json
 
