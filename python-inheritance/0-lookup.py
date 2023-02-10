@@ -3,5 +3,5 @@
 
 
 def lookup(obj):
-    """ return all attributes """ 
+    """ return all attributes """
     return (dir(obj))
