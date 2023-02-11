@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import json
+"""class to json"""
 
 
 def class_to_json(obj):
+    """class to json"""
     return (vars(obj))
