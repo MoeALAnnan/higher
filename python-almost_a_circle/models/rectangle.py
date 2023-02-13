@@ -49,7 +49,7 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def position_x(self, value):
+    def x(self, value):
         """managing position_x"""
         if type(value) is not int:
             raise TypeError(" position x must be an integer")
@@ -62,7 +62,7 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def position_y(self, value):
+    def y(self, value):
         """managing position y"""
         if type(value) is not int:
             raise TypeError(" position y must be an integer")
