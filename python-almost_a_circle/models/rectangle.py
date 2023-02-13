@@ -14,25 +14,25 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-        if type(width) is not int:
+        if type(self.__width) is not int:
             raise TypeError("width must be an integer")
-        elif type(height) is not int:
+        elif type(self.__height) is not int:
             raise TypeError("height must be an integer")
-        elif type(x) is not int:
+        elif type(self.__x) is not int:
             raise TypeError("x must be an integer")
-        elif type(y) is not int:
+        elif type(self.__y) is not int:
             raise TypeError("y must be an integer")
-        elif type(id) is not int:
+        elif type(self.__id) is not int:
             raise TypeError("id must be an integer")
-        if width < 0:
+        if self.__width < 0:
             raise ValueError("width must be > 0")
-        elif height < 0:
+        elif self.__height < 0:
             raise ValueError("height must be > 0")
-        elif x < 0:
+        elif self.__x < 0:
             raise ValueError("x must be >= 0")
-        elif y < 0:
+        elif self.__y < 0:
             raise ValueError("y must be >= 0")
-        elif id < 0:
+        elif self.__id < 0:
             raise ValueError("id must be >= 0")
 
     @property
