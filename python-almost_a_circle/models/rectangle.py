@@ -44,7 +44,7 @@ class Rectangle(Base):
             self.__height = value
 
     @property
-    def position_x(self):
+    def x(self):
         """setting position_x"""
         return self.__x
 
@@ -57,7 +57,7 @@ class Rectangle(Base):
             self.__x = value
 
     @property
-    def position_y(self):
+    def y(self):
         """retrieving position_y"""
         return self.__y
 
