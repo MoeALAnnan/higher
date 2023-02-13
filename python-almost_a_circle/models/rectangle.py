@@ -25,7 +25,7 @@ class Rectangle(Base):
         elif value < 0:
             raise ValueError("width must be >= 0")
         else:
-            self.__width = width
+            self.__width = value
 
     @property
     def height(self):
@@ -47,7 +47,7 @@ class Rectangle(Base):
         """setting position_x"""
         return self.__x
 
-    @position_x.setter
+    @x.setter
     def position_x(self, value):
         """managing position_x"""
         if type(value) is not int:
@@ -60,8 +60,10 @@ class Rectangle(Base):
         """retrieving position_y"""
         return self.__y
 
-    @position_y.setter
+    @y.setter
     def position_y(self, value):
         """managing position y"""
         if type(value) is not int:
             raise TypeError(" position y must be an integer")
+        else:
+            self.__y = value
