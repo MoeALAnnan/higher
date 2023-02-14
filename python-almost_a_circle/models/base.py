@@ -18,4 +18,5 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """converting json object to string"""
         return (json.dumps(list_dictionaries))
