@@ -20,7 +20,7 @@ class Base:
 
     @staticmethod
     """
-    method to convert json object to stringsi
+    Converts a list of dictionaries to a JSON string representation
     """
     def to_json_string(list_dictionaries):
         """converting json object to string"""
