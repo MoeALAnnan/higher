@@ -17,6 +17,7 @@ class Base:
             self.id = Base.__nb_objects
 
     @staticmethod
+    """static method"""
     def to_json_string(list_dictionaries):
         """converting json object to string"""
         return (json.dumps(list_dictionaries))
