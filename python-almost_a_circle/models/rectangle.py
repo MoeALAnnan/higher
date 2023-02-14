@@ -138,3 +138,8 @@ class Rectangle(Base):
                         self.__y = value
                     elif key == "id":
                         self.id = value
+
+    def to_dictionary(self):
+        dic1 = {"x": self.__x, "y": self.__y, "id": self.id,
+                "height": self.__height, "width": self.__width}
+        return (dic1)
