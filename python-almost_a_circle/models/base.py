@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""import json"""
+"""this is the documentation"""
 import json
 
 
 class Base:
-    """class Base"""
+    """this class is the base of all the project"""
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -17,7 +17,7 @@ class Base:
             self.id = Base.__nb_objects
 
     @staticmethod
-    """static method"""
+    """method to convert json object to strings"""
     def to_json_string(list_dictionaries):
         """converting json object to string"""
         return (json.dumps(list_dictionaries))
