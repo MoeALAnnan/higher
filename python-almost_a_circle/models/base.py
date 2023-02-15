@@ -39,3 +39,8 @@ class Base:
             y = cls.to_json_string(list_dict)
             f.write(y)
         f.close()
+
+    @staticmethod
+    def from_json_string(json_string):
+        """method to convert json string"""
+        return (json.loads(json_string))
