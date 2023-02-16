@@ -50,8 +50,8 @@ class Base:
         """a class method that returns an instance with all attributes """
         # create instance with dummy value
         if cls.__name__ == "Rectangle":
-            dummy = cls(2, 4, 0, 0)
+            dummy = cls(2, 4)
         elif cls.__name__ == "Square":
-            dummy = cls(2, 4, 1)
+            dummy = cls(2)
         dummy.update(**dictionary)
         return (dummy)
