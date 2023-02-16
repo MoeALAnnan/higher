@@ -44,3 +44,14 @@ class Base:
     def from_json_string(json_string):
         """method to convert json string"""
         return (json.loads(json_string))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """a class method that returns an instance with all attributes """
+        # create instance with dummy value
+        if cls.__name__ == "Rectangle":
+            dummy = cls(2, 4, 0, 0)
+        else:
+            dummy = cls(2, 4, 1)
+        dummy.update(**dictionary)
+        return (dummy)
