@@ -65,6 +65,3 @@ class Base:
             dictionary_list = cls.from_json_string(data)
             return [cls.create(**dic) for
                     dic in dictionary_list]
-        # for dic in dictionary_list:
-           # return(cls.create(**dic))
-            # i am missing an append
