@@ -36,8 +36,11 @@ class Base:
 
         filename = "{}.json".format(cls.__name__)
         with open(filename, 'w', encoding="utf-8") as f:
-            y = cls.to_json_string(list_dict)
-            f.write(y)
+            if list_dict is not None and len(list_objs) != 0:
+                y = cls.to_json_string(list_dict)
+                f.write(y)
+            else:
+                f.write("[]")
         f.close()
 
     @staticmethod
@@ -62,6 +65,9 @@ class Base:
         filename = "{}.json".format(cls.__name__)
         with open(filename, 'r', encoding="utf-8") as f:
             data = f.read()
-            variable = cls.from_json_string(data)
-            return [cls.create(**var) for
-                    var in variable]
+            dictionary_list = cls.from_json_string(data)
+            return [cls.create(**dic) for
+                    dic in dictionary_list]
+        # for dic in dictionary_list:
+           # return(cls.create(**dic))
+            # i am missing an append
