@@ -1,2 +1,2 @@
 -- list rows
-list * FROM first_table;
+LIST * FROM first_table;
