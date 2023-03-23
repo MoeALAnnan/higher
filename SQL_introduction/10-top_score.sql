@@ -1,4 +1,4 @@
 -- order by value
-SELECT id, name, score
-FROM my_table
+SELECT score, name
+FROM 2nd_table
 ORDER BY score DESC;
