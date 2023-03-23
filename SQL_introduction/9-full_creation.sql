@@ -1,5 +1,5 @@
 -- create a second table
-CREATE second_table(id INT, name VARCHAR(256), score INT);
+CREATE second_table IF NOT EXISTS(id INT, name VARCHAR(256), score INT);
 INSERT INTO second_table (id, name, score) 
 id (1, 2, 3, 4) 
 name('JOHN', 'ALEX', 'BOB', 'GEORGE') 
