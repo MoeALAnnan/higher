@@ -14,7 +14,8 @@ if __name__ == '__main__':
                          user=user, passwd=password, db=db_name)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cur.execute("SELECT * FROM states
+                WHERE name LIKE 'N%' COLLATE utf8_bin ORDER BY id ASC")
 
     rows = cur.fetchall()
     for row in rows:
