@@ -1,8 +1,8 @@
-3-my_safe_filter_states.py
 #!/usr/bin/python3
 """
 This script takes in an argument and displays all values in the states
-table of hbtn_0e_0_usa where name matches the argument (safe from SQL injection).
+table of hbtn_0e_0_usa where name
+matches the argument (safe from SQL injection).
 """
 
 import sys
