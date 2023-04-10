@@ -26,11 +26,11 @@ if __name__ == '__main__':
 
     cur.execute(query, (state_name,))
     rows = cur.fetchall()
-    if len(rows) == 0:
+    found = False
+    for row in rows:
+        found = True
+        print(row[0])
+    if not found:
         print()
-    else:
-        for row in rows:
-            print(row[0])
-
     cur.close()
     db.close()
