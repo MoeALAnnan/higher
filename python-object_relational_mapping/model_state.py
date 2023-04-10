@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 This module defines the State class that represents the states table
 in the MySQL database using SQLAlchemy.
