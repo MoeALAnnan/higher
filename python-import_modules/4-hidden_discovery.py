@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/python3
 import hidden_4
 if __name__ == "__main__":
     for i in sorted(dir(hidden_4)):
