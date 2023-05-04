@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 def max_integer(my_list=[]):
     if list is not None:
         if len(list) = 0:
