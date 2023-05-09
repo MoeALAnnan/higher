@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+def safe_print_list(my_list=[], x=0):
+    try:
+        new_list = []
+        s = ""
+        for i in range(0, x):
+            s1 = str(my_list[i])
+            s = s+s1
+        c = int(s)
+        print(c)
+        return(x)
+    except: IndexError
+    pass
+    for y in range(0,my_list[-1]):
+    	s2 = str(my_list[y])
+    	sc = sc+s2
+    d = int(s)
+    print(d)
+    return (my_list[-1])
