@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# comment
+
+
 def best_score(a_dictionary):
     if a_dictionary is not None:
         if a_dictionary != {}:
