@@ -59,8 +59,10 @@ def roman_to_int(roman_string):
                 counter = counter + 400
             elif list_roman[c] == "C" and list_roman[c-1] not in ("X", "D"):
                 counter = counter + 100
-            elif list_roman[c] == "L" and (list_roman[c - 1] == "C"
-                                           or list_roman[c - 1] == "D"):
+            elif list_roman[c] == "L" and (
+                    list_roman[c - 1] == "C" or
+                    list_roman[c - 1] == "D"
+            ):
                 counter = counter + 50
             elif list_roman[c] == "X" and list_roman[c + 1] == "L":
                 counter = counter + 40
