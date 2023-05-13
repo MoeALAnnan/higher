@@ -1,51 +1,34 @@
 #!/usr/bin/python3
-""" this is a class the defines a square """
-
-
 class Square:
-    """ declaring a private instance attribute """
-
-    __size = None
-
     def __init__(self, size=0):
-        """Initializes the data."""
-        self.__size = size
-        x = isinstance(self.__size, int)
-        if x is False:
-            raise TypeError("size must be an integer")
-        elif self.__size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            pass
 
-    def area(self):
-        """method to return area"""
-        return self.__size**2
+        if type(size) != int:
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
 
     @property
     def size(self):
-
-        """retrieving size"""
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
-
-        """managing values"""
-
-        if isinstance(value, int) is False:
+        if type(value) != int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
 
+    def area(self):
+        return (self.__size * self.__size)
+
     def my_print(self):
-        """a method that prints squares
-        using hashtaghs depending on the size"""
-        for i in range(0, self.__size):
-            for j in range(0, self.__size):
-                print("#", end="")
-            print("")
         if self.__size == 0:
+            print("")
+        x = 0
+        for x in range(self.__size):
+            for x in range(self.__size):
+                print("#", end="")
             print("")
