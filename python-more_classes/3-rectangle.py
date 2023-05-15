@@ -61,9 +61,12 @@ class Rectangle:
     def __str__(self):
         """ this is special method """
         str1 = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                str1 = str1 + "#"
-            if i != (self.__height - 1):
-                str1 = str1 + "\n"
-        return (str1)
+        if self.__height == 0 or self.__width == 0:
+            return str1
+        else:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    str1 = str1 + "#"
+                if i != (self.__height - 1):
+                    str1 = str1 + "\n"
+            return (str1)
