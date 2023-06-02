@@ -1,13 +1,17 @@
 #!/usr/bin/python3
-""" base geometry """
-Rectangle = __import__("9-rectangle").Rectangle
+""" Square class """
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """ sub class square """
+    """ class Square inheriting from Rectangle """
     def __init__(self, size):
-        self.__size = size
-        Rectangle.integer_validator(self, "size", size)
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        elif size <= 0:
+            raise ValueError("size must be greater than 0")
+        else:
+            self.__size = size
 
     def area(self):
         return (self.__size * self.__size)
