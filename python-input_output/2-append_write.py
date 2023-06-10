@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" write files"""
+""" a function that append a file """
 
 
 def append_write(filename="", text=""):
-    """ a function that reads file and print it to the terminal """
-    # we used a+ to create a file that if it does not exist
-    with open(filename, 'a+', encoding="utf-8") as f:
-        return (f.write(text))
+    """ append text to file """
+    with open(filename, 'a', encoding="utf-8") as f:
+        append = f.write(text)
+        return (append)
