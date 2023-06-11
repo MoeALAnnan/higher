@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-""" write an object to text file using json reoresentation"""
+""" import """
 import json
+""" a function that deserialize """
 
 
 def save_to_json_file(my_obj, filename):
-    """ a function that reads file and print it to the terminal """
-    with open(filename, 'a+', encoding="utf-8") as f:
-        x = json.dumps(my_obj)
-        return (f.write(x))
+    """ save to file """
+    with open(filename, 'w', encoding='utf-8') as f:
+        serializing = json.dumps(my_obj)
+        f.write(serializing)
