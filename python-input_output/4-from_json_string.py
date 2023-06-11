@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-""" jason convert """
+""" import """
 import json
+""" a function that deserialize """
 
 
 def from_json_string(my_str):
-    """ from jason to object """
-    return (json.loads(my_str))
+    """ from json string """
+    deserializing = json.loads(my_str)
+    return (deserializing)
