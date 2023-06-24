@@ -10,5 +10,4 @@ add_args = []
 if len(sys.argv) > 1:
     for i in range(1, len(sys.argv)):
         add_args.append(sys.argv[i])
-print(add_args)
 save_to_json_file(add_args, "add_item.json")
