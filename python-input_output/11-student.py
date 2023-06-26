@@ -25,3 +25,12 @@ class Student:
             return (new_dictionary)
         else:
             return (dictionary)
+
+    def reload_from_json(self, json):
+        for k, v in json.items():
+            if k == "first_name":
+                self.first_name = v
+            elif k == "last_name":
+                self.last_name = v
+            elif k == "age":
+                self.age = v
